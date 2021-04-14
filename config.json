@@ -9,6 +9,6 @@
   "sites": [
     ["https://my-site1.com/", "site1"],
     ["https://my-site2.com/", "site2"],
-    ["https://my-site3.com/", "site3"],
+    ["https://my-site3.com/", "site3"]
   ]
 }
