@@ -1,6 +1,11 @@
 ## VISUALPYNG
 
-**O que é:** Minha versão do app [VisualPing.io](https://visualping.io/ "VisualPing.io"), sem a limitação mínima de 6 horas a cada execução. Este app é feito em python e envia para o seu e-mail as atualizações bem como print do site quando houverem atualizações.
+## O que é
+
+Este app detecta quando houverem alterações e novidades em um ou mais sites.
+É a minha versão do app [VisualPing.io](https://visualping.io/ "VisualPing.io"), sem a limitação mínima de 6 horas entre cada execução.
+
+------------
 
 ## Como instalar
 
