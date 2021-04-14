@@ -1,0 +1,14 @@
+{
+  "frequencyMinutes": 30,
+  "pauseSeconds": 15,
+  "emailFrom": "email.from@gmail.com",
+  "emailTo": "email.to@gmail.com",
+  "password": "app-password-here",
+  "screenHeight": 1000,
+  "screenWidth": 1400,
+  "sites": [
+    ["https://my-site1.com/", "site1"],
+    ["https://my-site2.com/", "site2"],
+    ["https://my-site3.com/", "site3"],
+  ]
+}
