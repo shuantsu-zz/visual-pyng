@@ -8,7 +8,7 @@ from selenium.webdriver.chrome.options import Options
 
 #====================================================
 
-config = json.loads(open('config.json', 'r').read())
+config = json.loads(open('config.json', 'r', encoding='utf8').read())
 
 FREQUENCY_MINUTES = config['frequencyMinutes'] # Time, in minutes, that take to rerun the job
 PAUSE_SECONDS = config['pauseSeconds'] # Time, in seconds that takes to wait for the page to load
