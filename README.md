@@ -1,6 +1,6 @@
 ## VISUALPYNG
 
-**O que é: ** Minha versão do app visual ping, sem a limitação mínima de 6 horas por execução. Este app é feito em python e envia para o seu e-mail as atualizações bem como print do site quando houverem atualizações.
+**O que é:** Minha versão do app visual ping, sem a limitação mínima de 6 horas por execução. Este app é feito em python e envia para o seu e-mail as atualizações bem como print do site quando houverem atualizações.
 
 ## Como instalar
 
