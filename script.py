@@ -31,7 +31,7 @@ def send_mail(filename, complete_filename, message):
     )
     envelope.add_attachment(complete_filename)
 
-    envelope.send('smtp.googlemail.com', login=EMAIL_TO,
+    envelope.send('smtp.googlemail.com', login=EMAIL_FROM,
                   password=PASSWORD, tls=True)
 
 #====================================================
