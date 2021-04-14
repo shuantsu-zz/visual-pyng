@@ -12,11 +12,11 @@ config = json.loads(open('config.json', 'r').read())
 
 FREQUENCY_MINUTES = config['frequencyMinutes'] # Time, in minutes, that take to rerun the job
 PAUSE_SECONDS = config['pauseSeconds'] # Time, in seconds that takes to wait for the page to load
-PASSWORD = config['password'] # your gmail app password
-EMAIL_FROM = config['emailFrom'] # from e-mail address
-EMAIL_TO = config['emailTo'] # to e-mail adress
-SCREEN_HEIGHT = config['screenHeight'] # screenshot height
-SCREEN_WIDTH = config['screenWidth']  # screenshot width
+PASSWORD = config['password'] # Your gmail app password
+EMAIL_FROM = config['emailFrom'] # "From" e-mail address
+EMAIL_TO = config['emailTo'] # "To" e-mail adress
+SCREEN_HEIGHT = config['screenHeight'] # Screenshot height
+SCREEN_WIDTH = config['screenWidth']  # Screenshot width
 SITES = config['sites'] # Format: [url, description]
 
 #====================================================
@@ -45,7 +45,6 @@ def main(url, filename):
     options.add_argument('user-agent={0}'.format(user_agent))
 
     driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)
-    #driver = webdriver.Chrome(ChromeDriverManager().install())
 
     print(f'Accessing: {url} ({filename})')
 
