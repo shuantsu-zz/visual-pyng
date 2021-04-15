@@ -31,7 +31,7 @@ def send_mail(filename, complete_filename, message):
     )
     envelope.add_attachment(complete_filename)
 
-    envelope.send('smtp.googlemail.com', login=EMAIL_FROM,
+    envelope.send('smtp.googlemail.com', login=EMAIL_TO,
                   password=PASSWORD, tls=True)
 
 #====================================================
@@ -63,8 +63,11 @@ def main(url, filename):
     
     driver.save_screenshot(complete_filename)
     
-    if content != '' and content != open(complete_filename, 'rb').read():
-        message = '%s - %s - UPDATED!' % (url, filename)
+    if content != open(complete_filename, 'rb').read():
+        if content == '':
+            message = 'First access to (%s) ... stay tuned for updates ;-)' % url
+        else:
+            message = '%s - %s - UPDATED!' % (url, filename)
         print(message)
         print('SENDING EMAIL...')
         send_mail(filename, complete_filename, message)
